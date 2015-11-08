@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)" ></div>
+    <script>
+        function onOver(ooj){
+            ooj.innerHTML = "Hello";
+        }
+        function onOut(ooj){
+            ooj.innerHTML = "World";
+        }
+    </script>
+    <form>
+        <input type="text" onchange="changeDemo(this)">
+        <input type="text" onselect="select(this)">
+    </form>
+    <script>
+        function changeDemo(bg){
+            alert("内容改变了！");
+        }
+    </script>
+    <script>
+        function select(bg){
+            bg.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>
